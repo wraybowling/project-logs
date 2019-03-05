@@ -1,0 +1,50 @@
+---
+---
+
+@import "colors";
+@import "typography";
+
+// Components
+@import "components/search";
+@import "components/newsletter";
+@import "components/breadcrumb";
+@import "components/person";
+
+html{
+  background-color:white;
+}
+
+body{
+  font-size:18px;
+  font-family: 'Rubik', sans-serif;
+}
+
+header {
+  color:$brand;
+  background-color: $lilita;
+}
+
+footer {
+  background-color: $raven;
+  color:white;
+}
+
+.logo img{
+  height:4em;
+}
+
+.promo-bar {
+  display:block;
+  background-color: $snail;
+  text-align:center;
+  height:2em;
+  line-height:2em;
+  p,img{
+    display:inline;
+  }
+  img {
+    height:4em;
+    vertical-align:top;
+  } 
+}
+

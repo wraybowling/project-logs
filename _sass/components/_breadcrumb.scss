@@ -1,0 +1,52 @@
+
+.emoji{
+  height:1em;
+  width:1em;
+  vertical-align: middle;
+}
+
+.breadcrumb{
+  list-style:none;
+  border-radius:0.2rem;
+  overflow-x: scroll;
+  overflow-y:hidden;
+  font-size:0;
+  display:flex;
+  flex-direction:row;
+
+  white-space:nowrap;
+}
+
+.breadcrumb li{
+  display:block;
+  background-color:#f3f6f4;
+  font-size: calc(0.8rem + 0.4vw);
+  text-rendering: optimizeLegibility;
+  color:#008dff;
+  background-size:auto 102%;
+  background-repeat: repeat-y;
+  padding:0.7em 0.5em 0.7em 1em;
+  max-width:40vw;
+  text-overflow: ellipsis;
+  direction:rtl;
+  overflow:hidden;
+  height:100%;
+}
+
+.breadcrumb a{
+  text-decoration:none;
+}
+
+.breadcrumb a:hover{
+  text-decoration:underline;
+}
+
+.breadcrumb li:nth-child(1n+2){
+  background-image:url(/img/ui/breadcrumb-shadow-black.svg);
+}
+
+.breadcrumb li:last-child{
+//  background-image:url(/img/breadcrumb-shadow-black.svg);
+  color:grey;
+  border-radius: 0 0.2rem 0.2rem 0;
+}

@@ -1,0 +1,6 @@
+<ul class="breadcrumb">
+  <li><img class="emoji" src="{{site.github.url}}/img/ui/home.svg" alt="Home"></li>
+  {% for crumb in page.breadcrumbs %}
+    <li>{{crumb}}</li>
+  {% endfor %}
+</ul>
